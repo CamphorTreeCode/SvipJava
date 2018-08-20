@@ -1,0 +1,219 @@
+.top {
+	position: relative;
+	width: 100%;
+	height: 2.5rem;
+	padding-left: 1rem;
+	line-height: 2.5rem;
+	margin: 0px auto;
+	background-color: #fff;
+	border-radius: 0.25rem;
+	color: #343434;
+}
+
+.top img {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5rem;
+	left: 1%;
+}
+
+.top span {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 1.25rem;
+	font-size: 0.9rem;
+}
+
+.rightBottom {
+	position: relative;
+	padding: 1.5rem;
+	padding-top: 0;
+	font-size: 0.9rem;
+	
+}
+
+.rightBottom_top {
+	width: 100%;
+	height: 3.5rem;
+	background: #fff;
+	line-height: 3.5rem;
+	position: relative;
+	border-radius: 0.2rem;
+	margin-bottom: 1rem;
+	border: 0.05rem solid #ccc;
+}
+
+.rb_t_t {
+	position: absolute;
+	top: 50%;
+	margin-top: -1rem;
+	line-height: 3.5rem;
+}
+
+.rb_t_t_t {
+	width: 7rem;
+	height: 1.1rem;
+	height: 1rem;
+	line-height: 3.5rem;
+	margin-left: 1rem;
+	position: relative;
+	border-radius: 0.2rem;
+}
+
+.rb_t_t img {
+	height: 1rem;
+	position: absolute;
+	top: 50%;
+}
+
+.rb_t_t span {
+	height: 1rem;
+	line-height: 1rem;
+	position: absolute;
+	top: 50%;
+	margin-left: 1.5rem;
+}
+
+.upload-ul {
+	display: block;
+	width: 90.17%;
+	float: right;
+	border: 0.05rem solid #e1e1e1;
+	padding: 1rem;
+	border-radius: 0.3rem;
+}
+
+.food {
+	margin-top: 3rem;
+}
+
+.shangchuan {
+	margin-bottom:20px;
+}
+.line{
+	width:1rem;
+	height:1rem;
+	clear:both;
+}
+.tupian {
+	width: 8rem;
+	line-height: 8rem;
+	text-align: center;
+	font-size: 1rem;
+	float: left;
+}
+
+.upload-box {
+	height: 8rem;
+	max-height: 8rem;
+	background: #fff;
+	float: right;
+}
+
+.bigbox {
+	width: 100%;
+	margin-left: 7.5rem;
+}
+
+.bigbox p {
+	float: right;
+	color: #999;
+	margin-top: 1rem;
+	margin-right: 8rem;
+}
+
+.save {
+	font-size: 0.9rem;
+	padding: 0.5rem 2rem;
+	background: #FF7076;
+	color: #fff;
+	border-radius: 0.3rem;
+	outline: none;
+	float: right;
+	margin: 1rem 0.2rem;
+	border: 0;
+}
+
+.right {
+	position: relative;
+}
+
+.lunbo {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 45rem;
+	background: rgba(3,3,3, 0.3);
+	z-index: 1;
+	text-align: center;
+	}
+
+
+/*.lunbo img {
+	width: 12rem;
+	height: 10rem;
+}
+*/
+
+.lunbo_c {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.lunbo .upload-ul {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	position: absolute;
+	top: 17rem;
+	left: 50%;
+	margin-left: -10rem;
+	width: 20rem;
+	height: 12rem;
+	overflow: hidden;
+}
+
+.lunbo .upload-ul li {
+	width: 20rem;
+	height: 12rem;
+	float: left;
+}
+
+	
+.lunbo_c .btnleft {
+    position: absolute;
+    top: 21.5rem;
+    left: 50%;
+    margin-left: -15rem;
+    cursor: pointer;
+}
+
+.lunbo_c .btnright {
+    position: absolute;
+    top: 21.5rem;
+    left: 50%;
+    margin-left: 12rem;
+    cursor: pointer;
+}
+.lunbo_c .btncuo {
+	position: absolute;
+    top: 16.2rem;
+    left: 60.5%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.lunbo_c .upload-ul img{
+	width: 100%;
+	height: 100%;
+}
+
+.lunbo .diyControl {
+	display: none !important;
+}

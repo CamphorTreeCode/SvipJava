@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shensu.dao.ShopSkuSwiperMapper">
+  <resultMap id="BaseResultMap" type="com.shensu.pojo.ShopSkuSwiper">
+  <id column="shopSkuSwiperId" jdbcType="INTEGER" property="shopSkuSwiperId" />
+    <result column="shopSkuSwiperUrl" jdbcType="VARCHAR" property="shopSkuSwiperUrl" />
+    <result column="shopSKUId" jdbcType="INTEGER" property="shopskuid" />
+    <result column="shopSkuSwiperCreatTime" jdbcType="VARCHAR" property="shopSkuSwiperCreatTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    
+    shopSkuSwiperId, shopSkuSwiperUrl, shopSKUId, shopSkuSwiperCreatTime
+  </sql>
+   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    
+    select 
+    <include refid="Base_Column_List" />
+    from ShopSkuSwiper
+    where shopSkuSwiperId = #{shopSkuSwiperId,jdbcType=INTEGER}
+  </select>
+  
+   <select id="selectShopSkuId" resultMap="BaseResultMap">
+     	select * from ShopSkuSwiper where shopSKUId=#{shopskuid} 
+  </select>
+  
+  <delete id="deleteShopSkuSwireBySkuid" parameterType="Integer">
+   		delete from ShopSkuSwiper where shopSKUId=#{shopskuid} 
+  </delete>
+  
+   <insert id="insertShopSkuSwiper" parameterType="com.shensu.pojo.ShopSkuSwiper">
+     	insert into ShopSkuSwiper(shopSkuSwiperUrl, shopSKUId, shopSkuSwiperCreatTime) 
+     	values(#{shopSkuSwiperUrl},#{shopskuid},#{shopSkuSwiperCreatTime})
+  </insert>
+  
+  </mapper>

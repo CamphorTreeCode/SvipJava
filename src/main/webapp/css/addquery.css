@@ -1,0 +1,359 @@
+.category {
+	margin: 0.5rem 1.5rem;
+	font-size: 0.9rem;
+}
+.category span{
+	display: inline-block;
+	width: 6%;
+	padding: 0;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.9rem;
+	text-align: center;
+}
+.category .select-menu{
+	position: relative;
+	border-radius: 0.25rem;
+/*	overflow: hidden;*/
+	height: 2rem;
+	float: right;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 94%;
+}
+.category .select-menu input{
+	padding-left: 1rem;
+	background: white;
+	width: 100%;
+	height: 2.3rem;
+	display: inline-block;
+	border: 0;
+}
+.select-menu-div{
+	position: relative;
+}
+.select-menu-div img{
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5rem;
+	right: 2rem;
+}
+.select-menu-ul{
+	z-index: 5;
+	display: none;
+	background: white;
+	position: absolute;
+	width: 15%;
+	text-align: center;
+}
+.select-menu-ul li{
+	padding: 0.5rem 1.5rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.select-menu-ul li:hover{
+	cursor: pointer;
+	background: #ccc;
+}
+.state_on{
+	font-size: 0.9rem;
+	margin: 0.5rem 1.5rem;
+}
+
+.select-menu-ul li{
+	text-align: left;
+	position: relative;
+}
+
+.select-menu-ul li img{
+	position: absolute;
+	top: 0;
+	right: 10%;
+	top: 50%;
+	margin-top: -0.35rem;
+}
+
+.goods{
+	margin: 0.5rem 1.5rem;
+	background: white;
+}
+.uls{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.goods .uls:first-child{
+	position:relative;
+}
+.goods .uls  .quanbu{
+	position: absolute;
+	left:50%;
+	
+}
+.goods .uls  .xia_sel{
+	position: absolute;
+	left: 57%;
+    top: 82%;
+}
+
+
+
+.goods ul li{
+	background: white;
+	cursor: pointer;
+	padding: 1rem 0;
+	text-align: center;
+	float: left;
+	width: 9.3%;
+	font-size: 0.9rem;
+}
+.goods ul li:nth-of-type(1){
+	width: 7%;
+}
+.goods ul li:nth-of-type(8){
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.goods ul li img{
+	width: 80%;
+	height: 100%;
+}
+.goods .text>ul{
+	border-top: 0.05rem solid #ccc;
+	height: 7rem;
+}
+.goods .text>ul li{
+	position:relative;
+	color: rgb(153,153,153);
+	font-size: 0.9rem;
+	line-height: 5rem;
+	height: 6.9rem;
+}
+
+.goods .text>ul>li .a{
+	position:absolute;
+	top:50%;
+	margin-top:-0.5rem;
+}
+
+.goods .text>ul li:nth-child(7){
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+
+}
+
+.goods .text>ul li>a{
+color: rgb(66,165,255);
+}
+.goods .text>ul li>a:hover{
+color: rgb(255,0,66);
+}
+ .goods .text>ul  .xiou{
+	line-height: inherit;
+}
+.goods  input{
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	border: 0;
+	background: url(https://www.chuanshoucs.com/ServerImg/2018-05-28/aa99ad25-7d57-4c46-8ebb-fe275b5e0b5a.png);
+	background-size: contain;
+}
+.goods>ul>li:nth-of-type(1){
+	position: relative;
+}
+.goods>ul>li:nth-of-type(1) img{
+	position: absolute;
+	width: 0.7rem;
+	height: 0.7rem;
+	top: 50%;
+	margin-top: -0.45rem;
+	left: 50%;
+	margin-left: 1rem;
+	/*margin-left: 0.5rem;
+	margin-top: -0.5rem;*/
+	/*display: inline-block;*/
+}
+.xia_box span{
+	margin-top: 0.5rem;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+	height: 1rem;
+	width: 100%;
+	/*text-align: center;*/
+	line-height: 1rem;
+	font-size: 0.8rem;
+}
+
+.xia_box input{
+	/*position: relative;
+	top: 50%;
+	margin-top: -0.5rem;
+	right: 0;
+	margin-right: -0.5rem;*/
+	/*margin-top: 0.5rem;*/
+	margin-left: 0.5rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.xia_box{
+	padding-right: 10%;
+	display: none;
+	box-shadow:2px 2px 5px #ccc;
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: absolute;
+	height: 4rem;
+	bottom: -4.1rem;
+	left: 10%;
+	z-index: 99;
+}
+
+.fenye{
+	margin-top: 2rem;
+	float: right;
+	margin:0.5rem 1.5rem;
+}
+.fenye a:hover{
+	background:rgb(255,132,137);
+	color:#fff
+}
+
+.fenye a,.tiaozhuan {
+	display: inline-block;
+}
+.fenye a,.tiaozhuan .tiao{
+	font-size: 1.2rem;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	background: #fff;
+	text-align: center;
+	border-radius: 0.3rem;
+    color: #999;
+    border: 0;
+    
+}
+
+
+.fenlei{
+	margin: 1rem 1.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+}
+.fenlei .sta{
+	width: 6%;
+	display: inline-block;
+	text-align: center;
+}
+.fenlei .shanname{
+	margin-left: 19rem;
+}
+.morning{
+	height: 2.35rem;
+}
+.morning1{
+	margin-left: 1.1rem !important;
+}
+label{
+	font-weight: normal;
+}
+.fenlei .sku_t{
+	margin-left: 2rem;
+}
+.fenlei .pinpai{
+	margin-left: 8.6rem;
+}
+
+.fenlei div{
+	display: inline-block;
+}
+.fenlei label{
+	display: inline-block;
+	height: 3rem;
+	line-height: 3rem;
+}
+.fenlei textarea{
+	margin-left: 1rem;
+	display: block;
+    margin-top: 0.1rem;
+    float: right;
+    resize: none;
+    border-radius: 0.2rem;
+    border: 1px solid #e2e2e2;
+    padding: 0.5rem 1rem;
+}
+
+.fenlei .shanname textarea{
+    width: 15rem;
+}
+.fenlei  .sku_t textarea{
+    width: 8rem;
+}
+.fenlei  .pinpai textarea{
+    width: 15rem;
+    min-height: 2rem;
+}
+.fenlei .pinpai .pin ul{
+	display: none;
+	position: absolute;
+	top: 2.5rem;
+	left: 0;
+	z-index:99;
+	background: white;
+}
+.fenlei .pinpai .pin ul li{
+	padding: 0.5rem 2rem;
+}
+.fenlei .pinpai .pin ul li:hover{
+	cursor: pointer;
+	background: #ccc;
+}
+
+
+.fenlei .pinpai .pin{
+	position: relative;
+}
+.fenlei .pinpai .pin input{
+	cursor: pointer;
+	border: 0;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	width: 7rem;
+}
+.fenlei .pinpai .pin img {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    right: 1rem;
+}
+.chaxun{
+	margin: 0.5rem 1.5rem;
+	font-size: 0.9rem;
+}
+.chaxun img{
+	margin-right: 0.5rem;
+}
+
+.chaxun button {
+	margin-left: 92%;
+    width: 8%;
+    height: 2.4rem;
+    border: 0;
+    padding: 0 0.5rem;
+    background: rgb(255,132,137);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+}
+
+

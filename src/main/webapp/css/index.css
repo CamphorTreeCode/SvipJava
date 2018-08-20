@@ -1,0 +1,150 @@
+.rightBottom{
+   font-size: 1rem;	
+}
+.lione{
+	position: relative;
+}
+.rightBottom li{
+	width: 23rem;
+	height: 15rem;
+	background: #fff;
+	border-radius: 2%;
+	margin: 1rem;
+	float: left;
+}
+.rightBottom .b_one{
+	width: 8rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding-top: 1rem;
+	padding-left: 0.75rem;
+}
+.rightBottom .b_one img{
+	float: left;
+	width: 1rem;
+	margin-right: 0.5rem;
+	height: 1rem;
+}
+.rightBottom .b_one span{
+	float: left;
+	line-height: 1rem;
+}
+.logo2{
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -2rem;
+	left: 50%;
+	margin-left: -2rem;
+}
+.wenben{
+	width: 14rem;
+	height: 3rem;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	margin-left: -6.5rem;
+}
+.wenben p{
+	text-align: center;	
+}
+.wenben p:nth-of-type(2){
+	color: #FF8489;
+	font-size: 0.7rem;
+}
+.litwo{
+	position: relative;
+}
+.litwo .ss{
+	font-size: 1.25rem;
+	font-weight: 200;
+	position: absolute;
+	top: 5.5rem;
+	left: 2.5rem;
+}
+.litwo p:nth-of-type(2){
+	position: absolute;
+	font-size: 1rem;
+	bottom: 5rem;
+	left: 2.5rem;
+}
+.lithree{
+	position: relative;
+}
+.vip,.baoming{
+	width: 5rem;
+	height: 3.5rem;
+	text-align: center;
+	position: absolute;
+	bottom: 50%;
+	margin-bottom: -1.75rem;
+	font-size: 1.25rem;
+	color: #333;
+	font-weight: 500;
+}
+.vip{
+	left: 22%;
+}
+.baoming{
+	right: 22%;
+}
+.vips,.huiyuan{
+	width: 1.9rem;
+	height: 1.9rem;	
+}
+.change:hover{
+	color:ff8489;
+}
+
+.yuan{
+	width: 1.25rem;
+	height: 1.25rem;
+	line-height:1.25rem;
+	border-radius: 50%;
+	background: #FF0000;
+	opacity:0.5;
+	font-size: 0.8rem;
+	color: #fff;
+	position: absolute;
+	left: 2.4rem;
+	top: -0.6rem;
+	text-align: center;
+	margin: 0 auto;
+}
+.lifour{
+	position: relative;
+}
+.mala{
+	font-size: 1.25rem;
+	position: absolute;
+	top: 3.75rem;
+	left: 2.5rem;
+}
+.four4{
+	width: 7rem;
+	height: 1rem;
+	line-height: 1rem;
+	position: absolute;
+	bottom: 6.5rem;
+	left: 0.75rem;
+	padding-top: 1rem;	
+	padding-left: 0.75rem;
+}
+.four4 .bb{
+	float: left;
+	width: 1rem;
+	margin-right: 0.5rem;
+	height: 1rem;
+}
+.four4 .cc{
+	float: left;
+	line-height: 1rem;
+}
+.lifour .gps{
+	font-size: 1.25rem;
+	font-weight: 200;
+	position: absolute;
+	left: 2.5rem;
+	bottom: 0.25rem;
+}

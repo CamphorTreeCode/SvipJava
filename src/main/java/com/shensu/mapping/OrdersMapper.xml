@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shensu.dao.OrdersMapper">
+  <resultMap id="BaseResultMap" type="com.shensu.pojo.Orders">
+  <id column="orderId" jdbcType="INTEGER" property="orderId" />
+    <result column="openId" jdbcType="VARCHAR" property="openId" />
+    <result column="orderCretatTime" jdbcType="VARCHAR" property="orderCretatTime" />
+    <result column="orderStatus" jdbcType="INTEGER" property="orderStatus" />
+    <result column="orderNumber" jdbcType="VARCHAR" property="orderNumber" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    
+    orderId, openId, orderCretatTime, orderStatus,orderNumber
+  </sql>
+   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    
+    select 
+    <include refid="Base_Column_List" />
+    from Orders
+    where orderId = #{orderId,jdbcType=INTEGER}
+  </select>
+  
+  <!-- 根据条件分页查询 -->
+  <select id="selectByCondition" resultMap="BaseResultMap">
+       
+		select * from Orders where 1=1
+
+
+		<if test="franchiserUserUserName!=null">
+			and franchiserUserUserName=#{franchiserUserUserName}
+		</if>
+		
+		<if test="franchiserUserAccounts!=null">
+			and franchiserUserAccounts=#{franchiserUserAccounts}
+		</if>
+		
+		<if test="franchiserUserPid!=null">
+			and franchiserUserPid=#{franchiserUserPid}
+		</if>
+		
+		order by franchiserUserCreatTime desc
+		<if test="start!=null and size!=null">
+			LIMIT #{start},#{size}
+		</if>
+	
+  </select>
+  
+  <!-- 根据条件查询总数 -->
+  <select id="selectCountByCondition" resultType="Integer">
+      select count(*) from FranchiserUser where 1=1
+        
+        <if test="franchiserUserUserName!=null">
+			and franchiserUserUserName=#{franchiserUserUserName}
+		</if>
+		
+		<if test="franchiserUserAccounts!=null">
+			and franchiserUserAccounts=#{franchiserUserAccounts}
+		</if>
+		
+		<if test="franchiserUserPid!=null">
+			and franchiserUserPid=#{franchiserUserPid}
+		</if>
+		<if test="start!=null and size!=null">
+			LIMIT #{start},#{size} 
+		</if>
+  </select>
+  
+  </mapper>

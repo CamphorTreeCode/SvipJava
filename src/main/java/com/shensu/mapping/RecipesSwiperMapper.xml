@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shensu.dao.RecipesSwiperMapper">
+  <resultMap id="BaseResultMap" type="com.shensu.pojo.RecipesSwiper">
+
+    <id column="recipesSwiperId" jdbcType="INTEGER" property="recipesswiperid" />
+    <result column="recipesSwiperImg" jdbcType="VARCHAR" property="recipesswiperimg" />
+    <result column="recipesId" jdbcType="INTEGER" property="recipesid" />
+    <result column="recipesSwiperCreatTime" jdbcType="VARCHAR" property="recipesswipercreattime" />
+  </resultMap>
+  
+  <sql id="Base_Column_List">
+    recipesSwiperId, recipesSwiperImg, recipesId, recipesSwiperCreatTime
+  </sql>
+  
+  <!-- 根据食谱Id查找所有的轮播图 -->
+  <select id="findRecipesSwiperById" parameterType="Integer" resultType="com.shensu.pojo.RecipesSwiper">
+  		select * from RecipesSwiper where recipesId = #{recipesid,jdbcType=INTEGER}
+  </select>
+  
+    <!-- 根据食谱Id查找所有的轮播图 -->
+  <select id="deleteRecipesSwiperById" parameterType="Integer">
+  		delete from RecipesSwiper where recipesId = #{recipesid,jdbcType=INTEGER}
+  </select>
+ 
+  <!-- 添加食谱图片信息 -->
+	 <insert id="insertRecipesSwiperImg" parameterType="com.shensu.pojo.RecipesSwiper" >
+    	insert into RecipesSwiper
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recipesswiperid != null">
+        recipesSwiperId,
+      </if>
+      <if test="recipesswiperimg != null">
+        recipesSwiperImg,
+      </if>
+      <if test="recipesid != null">
+        recipesId,
+      </if>
+      <if test="recipesswipercreattime != null">
+        recipesSwiperCreatTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recipesswiperid != null">
+        #{recipesswiperid,jdbcType=INTEGER},
+      </if>
+      <if test="recipesswiperimg != null">
+        #{recipesswiperimg,jdbcType=VARCHAR},
+      </if>
+      <if test="recipesid != null">
+        #{recipesid,jdbcType=INTEGER},
+      </if>
+      <if test="recipesswipercreattime != null">
+        #{recipesswipercreattime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  
+</mapper>

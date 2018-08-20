@@ -1,0 +1,88 @@
+html,body {
+	background: url(../img/bg.png) repeat-x center center;
+	background-size: cover;
+	height: 100%;
+}
+
+
+.top {
+	padding-top: 50px;
+	padding-left: 60px;
+	position: relative;
+	
+}
+.top img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+}
+.top span {
+	display: inline-block;
+	margin-left: 80px;
+	font-size: 35px;
+	color: #fff;
+}
+
+
+
+.login {
+	width: 420px;
+	height: 455px;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 7px;
+	border: 1px solid #fff;
+	position: absolute;
+	left: 60%;
+	margin-top: 130px;
+
+}
+.login h3 {
+	color: #ffa7a9;
+	margin: 40px 0;
+
+}
+.login .dor {
+	position: relative;
+}
+.user {
+	height: 45px;
+	width: 320px;
+	border-radius: 5px;
+	margin: 20px 0;
+	outline: none;
+	font-size: 16px;
+	color: #000;
+	padding-left: 20px;
+	border: 2px solid #ccc;
+}
+
+.icon-user,.icon-password {
+	position: absolute;
+	left: 78%;
+	top: 30%;
+	height: 30px;
+	width: 30px;
+	z-index: 10;
+}
+.btn {
+	background-color: #ff7f84 !important;
+	height: 45px;
+	width: 320px;
+	border-radius: 5px;
+	color: #fff;
+	border: none;
+	outline: none !important;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.active{
+	color: red;
+	height: 30px;
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+}

@@ -1,0 +1,176 @@
+button{
+	outline:none;
+}
+.rightBottom .name{
+	margin:0 1.5rem;
+	background: white;
+	padding: 1rem 0;
+}
+.rightBottom .name span{
+	display: inline-block;
+	width: 13.9%;
+	text-align: center;
+}
+.rightBottom .content{
+	margin:0 1.5rem;
+	background: white;
+	padding: 1rem 0;
+	border-top: 0.05rem solid #ccc;
+}
+.rightBottom .content ul{
+	display: block;
+	height: 5rem;
+}
+.rightBottom .content ul li img {
+	width: 50%;
+	height: 100%;
+	/* max-height: 100%;
+	max-width: 100%; */
+	background-size:100% 100%;
+}
+.rightBottom .content ul li{
+	position: relative;
+}
+.rightBottom .content ul li img:nth-of-type(2){
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	top: 50%;
+	left: 50%;
+	margin-left: -1rem;
+	margin-top: -1rem;
+		max-height: 100%;
+	max-width: 100%;
+	/*min-height: 100%;
+	min-width: 100%;*/
+}
+.rightBottom .content ul li{
+	color: rgb(154,154,154);
+	margin: 0;
+	font-size: 0.9rem;
+	margin-left: 0.2rem;
+	padding: 0 1rem;
+	height: 5rem;
+	display: inline-block;
+	width: 13.9%;
+	text-align: center;
+	line-height: 5rem;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.rightBottom .content ul li:nth-of-type(7){
+	padding-top: 0.5rem;
+}
+.rightBottom .content ul li:nth-of-type(7){
+	line-height: inherit;
+}
+.rightBottom .content ul li a:hover{
+	cursor: pointer;
+	color: rgb(254,73,107);
+}
+.rightBottom .content ul li a{
+	color: rgb(64,168,253);
+}
+.rightBottom .top{
+	margin:0.5rem 1.5rem;
+	background: white;
+	padding: 1rem 0.5rem;
+	font-size: 0.9rem;
+	border-radius: 0.25rem;
+}
+.rightBottom .top img{
+	margin-right: 0.5rem;
+}
+.rightBottom .head{
+	height: 5rem;
+	margin:0.5rem 1.5rem;
+	padding: 1rem 2rem;
+	font-size: 0.9rem;
+}
+.rightBottom .head p{
+	display: inline-block;
+	position: relative;
+/*	padding-right: 20.35rem;*/
+}
+.rightBottom .head p img{
+	position: absolute;
+	top: 50%;
+	right: 0.25rem;
+	margin-top: -0.65rem;
+}
+.rightBottom .head input{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 1rem;
+	color: rgb(154,154,154);
+	border-radius: 0.25rem;
+/*	padding-right: 6rem;*/
+	background: white;
+	display: inline-block;
+	margin-left: 1.5rem;
+	border: 0;
+}
+.rightBottom .head button{
+	float: right;
+	height: 2.5rem;
+	padding: 0.3rem  2rem;
+	color: white;
+	border: 0;
+	background: rgb(255,132,137);
+	border-radius: 0.35rem;
+}
+.rightBottom .head p img{
+	margin-left: 5rem;
+}
+.rightBottom .head button img{
+	margin-right: 0.5rem;
+}
+
+.rightBottom .head_bot{
+	height: 5rem;
+	margin:0.5rem 1.5rem;
+	padding: 1rem 2rem;
+	font-size: 0.9rem;
+}
+
+.rightBottom .head_bot button{
+	margin-left: 2rem;
+	float: right;
+	height: 2.5rem;
+	padding: 0.3rem  2rem;
+	color: white;
+	border: 0;
+	background: rgb(255,132,137);
+	border-radius: 0.35rem;
+}
+.rightBottom .head_bot button img{
+	margin-right: 0.5rem;
+}
+
+
+.fenye{
+	margin: 2rem;
+	float: right;
+}
+.fenye a,.tiaozhuan {
+	display: inline-block;
+}
+.fenye a,.tiaozhuan .tiao{
+	font-size: 1.2rem;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	background: #fff;
+	text-align: center;
+	border-radius: 0.3rem;
+    color: #999;
+    border: 1px solid #e2e2e2;
+   margin-left: 0.1rem; 
+}
+.fenye a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #FF8489;
+}

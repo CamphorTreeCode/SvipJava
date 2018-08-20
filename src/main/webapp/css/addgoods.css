@@ -1,0 +1,341 @@
+.category {
+	font-size: 0.9rem;
+}
+.category span {
+	display: inline-block;
+	width: 6%;
+	padding: 0;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.category .select-menu {
+	color: rgb(154, 154, 154);
+	position: relative;
+	
+	/*	overflow: hidden;*/
+	height: 2rem;
+	float: right;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 94%;
+}
+
+.category .select-menu input {
+	padding-left: 1rem;
+	background: white;
+	width: 100%;
+	height: 3rem;
+	display: inline-block;
+	border: 0;
+    border-radius: 0.25rem;
+}
+
+.select-menu-div {
+	position: relative;
+}
+
+.select-menu-div img {
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5rem;
+	right: 2rem;
+}
+
+.select-menu-ul {
+	display: none;
+	background: white;
+	position: absolute;
+	width: 15%;
+	z-index: 11;
+	text-align: center;
+}
+
+.select-menu-ul li {
+	padding: 0.5rem 1.5rem;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.select-menu-ul li:hover {
+	cursor: pointer;
+	background: #ccc;
+}
+.select-menu-ul li{
+	text-align: left;
+	position: relative;
+}
+
+.select-menu-ul li img{
+	position: absolute;
+	top: 0;
+	right: 10%;
+	top: 50%;
+	margin-top: -0.35rem;
+}
+.rightBottom1 .top{
+	margin:0.5rem 1.5rem;
+	background: white;
+	padding: 1rem 0.5rem;
+	font-size: 0.9rem;
+	border-radius: 0.25rem;
+}
+/*.rightBottom1 .top_odd{
+	margin-top: 0rem;
+}*/
+
+.rightBottom1 .top img{
+	margin-right: 0.5rem;
+}
+.rightBottom1 .category{
+	margin:0.5rem 1.5rem;
+	height: 3rem;
+	/*overflow: hidden;*/
+}
+.rightBottom1 .category span{
+	display: inline-block;
+	width: 6%;
+	height: 3rem;
+	font-size: 0.9rem;
+	text-align: center;
+	line-height: 3rem;
+	float: left;
+}
+.rightBottom1 .information{
+	min-height: 2.5rem;
+	margin:0.5rem 1.5rem;
+	/*margin-top: 1.5rem;*/
+}
+.rightBottom1 .information span{
+	width: 6%;
+	text-align: center;
+	float: left;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 0.9rem;
+	display: inline-block;
+	font-size: 0.9rem;
+}
+.rightBottom1 .information textarea{
+	display: inline-block;
+	float: left;
+	height: 2.6rem;
+	font-size: 0.85rem;
+	padding-left: 0.5rem;
+	line-height: 2.5rem;
+	width: 94%;
+	/*border: 0;*/
+	border: 0.05rem solid #e1e1e1 !important;
+	border-radius: 0.2rem;
+}
+.superbig{
+	margin:0.5rem 1.5rem;
+	/*width: 100%;*/
+	min-height: 8.6rem;
+	overflow: hidden;
+}
+.linelabel {
+    float: left;
+    line-height: 100%;
+        margin-top: 3.9rem;
+        margin-left: 0.6rem;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    font-weight: 400;;
+}
+.upload-ul {
+    position: relative;
+    display: inline-block;
+    background: white;
+}
+.upload-ul {
+    display: block;
+    width: 94%;
+    float: right;
+    border: 0.05rem solid #e1e1e1;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+.rightBottom1 .miaoshu input{
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	width: 5rem;
+	border: 0;
+	margin-right: 2rem;
+	margin-bottom: 0.5rem;
+	background: #ECECEC;
+	color: rgb(184,184,184);
+	background-position:99% 1%;
+	    border-radius: 0.25rem;
+}
+.aa img{
+	position: absolute;
+	top: -0.5rem;
+	right: 1.5rem;
+	z-index: 2;
+}
+.aa {
+	display: inline-block;
+	position: relative;
+}
+.rightBottom1 .miaoshu {
+	margin-top: 1rem;
+}
+.rightBottom1 .miaoshu button{
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	width: 3rem;
+	border: 0;
+	margin-right: 0.5rem;
+	background: white;
+	color: rgb(184,184,184);
+	background-position:99% 1%;
+	    border-radius: 0.25rem;
+}
+.rightBottom1 .skustate .content{
+	width: 94%;
+	display: inline-block;
+	/*padding-left: 5%;*/
+	background: white;
+}
+.rightBottom1 .miaoshu .baobei{
+	width: 94%;
+	display: inline-block;
+}
+
+.rightBottom1 .skustate .content p{
+	padding: 1rem 0;
+	padding-left: 5%;
+}
+.rightBottom1 .skustate .content p input{
+	margin: 0 3%;
+	width:15%;
+	height: 2rem;
+	border: 0.05rem solid rgb(197,197,197);
+	border-radius: 0.25rem;
+	padding: 0 0.5rem;
+}
+.rightBottom1 .skustate .content p input:nth-of-type(3),
+.rightBottom1 .skustate .content p input:nth-of-type(4){
+	width: 3rem;
+}
+.rightBottom1 .skustate .content .upaw{
+	float: initial;
+	width: 100%;
+	padding-left: 5%;
+}
+.rightBottom1 .skustate .content .sku_1:nth-of-type(1){
+	border: 0;
+}
+.rightBottom1 .skustate .content .sku_1:nth-of-type(1) .imgs1{
+	/*position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 2;*/
+	display: none;
+}
+.rightBottom1 .skustate .content .sku_1:nth-of-type(1) .imgs{
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 2;
+}
+.rightBottom1 .skustate .content .sku_1{
+	position: relative;
+	border-top: 0.05rem solid #ccc;
+}
+.rightBottom1 .skustate .content .sku_1 .imgs1{
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 2;
+}
+.rightBottom1 .skustate .content .sku_1 .imgs{
+	position: absolute;
+	bottom: 1rem;
+	right: 4rem;
+	z-index: 2;
+}
+.bianji{
+	margin:0.5rem 1.5rem;
+}
+
+.rightBottom1 .shangpin p img{
+	/* position: absolute;
+	top: 40%;
+	right: 0px; */
+	/* margin-top: -0.8rem; */
+	/* z-index: 3; */
+}
+.rightBottom1 .shangpin input {
+    width: 5%;
+    border: 0;
+    margin-right: 1%;
+    border: 0.05rem solid #E1E1E1;
+    text-align: center;
+    float: left;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    font-size: 0.85rem;
+    display: inline-block;
+    background:white;
+}
+
+.rightBottom1 .shangpin p{
+	position: relative;
+	margin-bottom:0.5rem;
+	display: block;
+	height: 2.6rem;
+}
+.rightBottom1 .shangpin p .imgs1{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 1rem;
+	z-index: 2;
+}
+.rightBottom1  .shangpin p .imgs{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 4rem;
+	z-index: 2;
+}
+.rightBottom1  .shangpin p:nth-of-type(1) .imgs1{
+	display: none; 
+}
+ .rightBottom1  .shangpin p:nth-of-type(1) .imgs{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 1rem;
+	z-index: 2;
+}
+.fot_bottom button{
+	color:#FFF;
+	float: right;
+	border: 0;
+	width: 5rem;
+	height: 2rem;
+	margin-left: 2rem;
+	border-radius: 0.25rem;
+	background: #ff8489;
+}
+.select-menu-div{
+	position: relative;
+}
+.select-menu-div img{
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5rem;
+	right: 2rem;
+	
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shensu.dao.RefundMapper">
+	<!-- 申请退款 -->
+	<insert id="addRefund">
+		insert into Refund
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="refundId != null and refundId !=''">
+				refundId,
+			</if>
+			<if test="openId != null and openId !=''">
+				openId,
+			</if>
+			<if test="money != null and money !=''">
+				money,
+			</if>
+			<if test="refundReason != null and refundReason !=''">
+				refundReason,
+			</if>
+			<if test="name != null and name !=''">
+				name,
+			</if>
+			<if test="refundCreateTime != null and refundCreateTime !=''">
+				refundCreateTime,
+			</if>
+			<if test="refundState != null and refundState !=''">
+				refundState,
+			</if>
+			<if test="phone != null and phone !=''">
+				phone,
+			</if>
+			<if test="formId != null and formId !=''">
+				formId,
+			</if>
+			<if test="platform != null and platform !=''">
+				platform,
+			</if>
+		</trim>
+
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+
+			<if test="refundId != null and refundId !=''">
+				#{ refundId },
+			</if>
+			<if test="openId != null and openId !=''">
+				#{ openId },
+			</if>
+			<if test="money != null and money !=''">
+				#{ money },
+			</if>
+			<if test="refundReason != null and refundReason !=''">
+				#{ refundReason },
+			</if>
+			<if test="name != null and name !=''">
+				#{ name },
+			</if>
+			<if test="refundCreateTime != null and refundCreateTime !=''">
+				#{ refundCreateTime },
+			</if>
+			<if test="refundState != null and refundState !=''">
+				#{ refundState },
+			</if>
+			<if test="phone != null and phone !=''">
+				#{ phone },
+			</if>
+			<if test="formId != null and formId !=''">
+				#{formId},
+			</if>
+            <if test="platform != null and platform !=''">
+				#{platform},
+			</if>
+
+		</trim>
+	</insert>
+
+
+	<!-- 分页查询退款列表 -->
+	<select id="findListCondition" resultType="com.shensu.pojo.Refund">
+		select * from Refund where 1 = 1
+		<if test="name != null and name != ''">
+			and name = #{ name }
+		</if>
+		<if test="phone != null and phone != ''">
+			and phone = #{ phone }
+		</if>
+		<if test='refundState != "0" '>
+			and refundState = #{ refundState }
+		</if>
+		<if test="start!=null and size!=null">
+			LIMIT #{start},#{size}
+		</if>
+	</select>
+
+	<!-- 分页查询退款列表数量 -->
+	<select id="findCountCondition" resultType="integer">
+		select count(*) from Refund where 1 = 1
+		<if test="name != null and name != ''">
+			and name = #{ name }
+		</if>
+		<if test="phone != null and phone != ''">
+			and phone = #{ phone }
+		</if>
+		<if test='refundState != "0" '>
+			and refundState = #{ refundState }
+		</if>
+	</select>
+
+	<!-- 根据id查询单个退款信息 -->
+	<select id="findByRefundId" resultType="com.shensu.pojo.Refund">
+		select * from Refund
+		where refundId=#{refundId}
+	</select>
+
+
+	<update id="updateRefund">
+		update Refund
+		<set>
+			<if test="openId != null and openId !=''">
+				openId = #{openId},
+			</if>
+			<if test="money != null and money !=''">
+				money = #{ money},
+			</if>
+			<if test="refundReason != null and refundReason !=''">
+				refundReason = #{ refundReason},
+			</if>
+			<if test="name != null and name !=''">
+				name = #{ name},
+			</if>
+			<if test="refundCreateTime != null and refundCreateTime !=''">
+				refundCreateTime = #{ refundCreateTime},
+			</if>
+			<if test="refundState != null and refundState !=''">
+				refundState = #{ refundState},
+			</if>
+			<if test="phone != null and phone !=''">
+				phone = #{ phone},
+			</if>
+			<if test="formId != null and formId !=''">
+				formId = #{ formId},
+			</if>
+			<if test="partner_trade_no != null and partner_trade_no !=''">
+				partner_trade_no = #{ partner_trade_no},
+			</if>
+		</set>
+		where refundId = #{refundId}
+	</update>
+	
+	<!-- 根据id删除退款信息 -->
+	
+	<delete id="deleteRefund">
+	   delete from Refund where refundId = #{refundId}
+	</delete>
+
+</mapper>

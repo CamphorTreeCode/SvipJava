@@ -1,0 +1,317 @@
+body{
+	background: url(../img/background.png);
+}
+
+.container{
+	width:100%;
+	height:100%;
+	}
+a{
+	text-decoration: none !important;
+	color: #c2c2c2;
+}
+.left a:hover{
+	text-decoration: none !important;
+	color: #C2C2C2;
+}
+.left{
+	float: right;
+	height:auto !important;
+	position:fixed;
+	height:100% !important;
+	background-color:#111;
+	padding: 0;
+}
+
+.leftTop{
+	width: 100%;
+	height: 9rem;
+	color: #fff;
+	position: relative;
+	border-bottom: 1px solid #454d58;
+	background: #111;
+}
+.logo{
+	min-width: 4.1rem;
+	min-height: 4.1rem;
+	max-height: 4.1rem;
+	max-width:  4.1rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -3rem;
+	left: 50%;
+	margin-left: -2.1rem;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	margin-top: 20%;
+	left: 50%;
+	margin-left: -42%;
+	text-align: center;
+	
+}
+/*left*/
+.leftsidebar_box{
+	height:auto !important;
+	overflow:visible !important;
+	height:100% !important;
+}
+.leftsidebar_box a{
+	display: inline-block;
+	color:#a0abb5;
+}
+.leftsidebar_box dt{
+	padding-left:1.8rem;
+	background-repeat:no-repeat;
+	background-position:0.5rem center;
+	color:#a0abb5;
+	font-size:0.75rem;
+	position:relative;
+	line-height:2.4rem;
+	cursor:pointer;
+	border-left: 0.25rem solid #111;
+	overflow: hidden;
+	
+	}
+.safa,.safas,.dtt,.dtts,.we,.wes,.sencod_dd,.sencod_dds,.ddt,.ddts,.cont,.conts,.us,.uss,.they,.theys,.out,.outs,.them,.thems,.is,.iss,.it,.its,.roundm,.rounds,.sun,.suns,.you,.yous,.me,.mes,.our,.ours,.my,.mys,.study,.studys,.off,.offs{
+	background-repeat:no-repeat !important;
+	background-position:0.5rem center !important;
+	font-size:0.7rem;
+	line-height:2.4rem;
+	background-position:0.5rem center;
+	border-left: 0.25rem solid #111;
+	cursor:pointer;
+	}
+.leftsidebar_box dd{
+	background-color:#111;
+	margin-left:1.5rem;
+	padding-left: 2rem;
+	overflow: hidden;
+	color:#a0abb5;
+	}
+.leftsidebar_box dd a{
+	color:#c2c2c2;
+	/* line-height:1rem; */
+	text-decoration: none;	
+}
+.leftsidebar_box dt img{
+	position:absolute;
+	right: 0.3rem;
+	top:50%;
+	margin-top: -0.2rem;
+}
+	/*商品类目管理  商品管理*/
+.dtt,.con{
+	background-image:url(../img/shangpin2.png);
+	}
+.dtts,.cons{
+	background-image: url(../img/shangpin.png);
+}
+	/*添加类目*/
+.we,.sencod_dd{
+	background-image:url(../img/tianjia2.png);
+	}
+.wes,.sencod_dds{
+	background-image: url(../img/tianjia.png);
+}
+/*食谱类目管理*/
+.ddt{
+	background-image:url(../img/mianshi2.png);
+	}
+.cont{
+	background-image:url(../img/mianshi2.png); 
+	}
+.ddts{
+	background-image: url(../img/mianshi.png);
+}
+.conts{
+	background-image: url(../img/mianshi.png);
+}
+/*商品查询*/
+.us,.they{
+	background-image: url(../img/fangda2.png);
+}
+.uss,.theys{
+	background-image: url(../img/fangda.png);
+}
+/*添加商品*/
+.our,.them{
+	background: url(../img/jiahao2.png);
+}
+.ours,.thems{
+	background: url(../img/jiahao.png);
+}
+/*账号管理*/
+.is{
+	background-image: url(../img/zhan2.png);
+}
+.iss{
+	background-image: url(../img/zhan.png);
+}
+/*订单审核*/
+.Order{
+	background-image: url(../img/headd.png);
+}
+.Orders{
+	background-image: url(../img/heads.png);
+}
+/*加盟管理*/
+.it{
+	background-image: url(../img/ren2.png);
+}
+.its{
+	background-image: url(../img/ren.png);
+}
+/*维修管理*/
+.round{
+	background-image: url(../img/wei.png);
+}
+.rounds{
+	background-image: url(../img/wei2.png);
+}
+
+/*退款管理*/
+.refund{
+	background-image: url(../img/refund1.png);
+}
+.refunds{
+	background-image: url(../img/refund2.png);
+}
+
+	/*界面管理*/
+.sun{
+	background-image:url(../img/jiemian2.png);
+	}
+.suns{
+	background-image: url(../img/jiemian.png);
+}
+	/*首页banner*/
+.you{
+	background-image:url(../img/lunbo2.png);
+	}
+.yous{
+	background-image: url(../img/lunbo.png);
+}	
+	/*首页展示*/
+.me{	
+	background-image:url(../img/zhanshi2.png);
+	}
+.mes{
+	background-image:url(../img/zhanshi.png);
+	}
+	/*申请加盟*/
+.out{
+	background-image:url(../img/daili2.png);
+	}
+.outs{
+	background-image: url(../img/daili.png);
+}
+	/*关于我们*/
+.my{
+	background-image:url(../img/guanyu2.png);
+}
+.mys{
+	background-image: url(../img/guanyu.png);
+}	
+     /*学习天地*/
+.study{
+	background-image: url(../img/xuexi2.png);
+}  
+.studys{
+	background-image: url(../img/xuexi.png);
+}  
+ 
+	/*模板消息*/
+.off{
+	background-image:url(../img/muban2.png);
+	}	
+.offs{
+	background-image: url(../img/muban.png);
+}
+
+	/*后台首页*/
+.safas{
+	background-image: url(../img/shouye.png);
+}
+.safa{
+	background-image: url(../img/shouye2.png);
+}
+/*left end*/
+.right{
+	float: right;
+	padding: 0;
+	padding-bottom: 2rem;
+}
+.rightTop{
+	width: 100%;
+	background-color: #ff8489;
+	background-image: url(../img/tou.png);
+	height: 3rem;
+	line-height: 3rem;
+	color: #fff;
+	position: relative;
+}
+.rightTop_r{
+	width: 10rem;
+	line-height: 2rem;
+	float: right;
+	padding: 0.5rem;
+	margin-right: 2rem;
+	position: relative;
+}
+.user{
+	max-width: 2rem;
+	max-height: 2rem;
+	float: left;
+	margin-right: 0.5rem;
+}
+.xia{
+	line-height: 2rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.55rem;
+}
+.dogegg{
+	display: block;
+	width: 5.5rem;
+	height: 4.5rem;
+	background: #fff;
+	position: absolute;
+	right: 2rem;
+	bottom: -3.5rem;
+	border-radius: 0.25rem;
+	display: none;
+}
+.dogegg a{
+	display: block;
+	text-align: center;
+	margin-bottom: 0.5rem;
+	height: 0.75rem;
+}
+.dogegg a:nth-of-type(1){
+	color: dodgerblue;
+}
+.dogegg a:nth-of-type(2){
+	color: red;
+}
+.rightCenter{
+	padding: 0;
+}
+.weizhi{
+	color: #333;
+	margin-left: 0.25rem;
+}
+.current{
+	padding: 1.5rem;
+}
+.laba,.weizhi{
+	float: left;
+	line-height: 1rem;
+	overflow: hidden;
+}
+.special{
+	background-color: rgb(0, 0, 0) !important;
+    border-left: 5px solid rgb(255, 132,137) !important;
+    color: rgb(255, 255, 255) !important;
+}
